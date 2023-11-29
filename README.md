@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Семён Климов](https://up.htmlacademy.ru/adaptive/30/user/2394671).
-* Наставник: `Неизвестно`.
+* Наставник: <a href="https://htmlacademy.ru/profile/id215761">Comina</a>.
 
 ---
 
