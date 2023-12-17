@@ -1,0 +1,15 @@
+.advantages {
+
+}
+
+.advantages__title {
+
+}
+
+.advantages__list {
+  @include list-style-none
+}
+
+.advantages__item {
+  font-family: $secondary-font;
+}
