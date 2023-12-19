@@ -2,7 +2,7 @@
 
 }
 
-.title--one-mobile {
+.title--one-mobile-white {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -22,4 +22,11 @@
   color: #000000;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.title--one-mobile-black {
+  font-size: 36px;
+  line-height: 36px;
+  color: $title-color;
+  font-weight: 400;
 }
