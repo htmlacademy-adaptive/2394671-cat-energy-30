@@ -12,7 +12,9 @@
 }
 
 .catalogs__title {
-
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
 }
 
 .catalogs__text {
@@ -25,5 +27,4 @@
   text-transform: uppercase;
   color: $title-color;
   text-decoration: none;
-
 }

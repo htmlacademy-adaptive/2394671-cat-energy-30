@@ -1,32 +1,10 @@
 .title {
-
-}
-
-.title--one-mobile-white {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+  color: $title-color;
+}
+
+.title--white {
   color: #ffffff;
-  font-weight: 400;
-}
-
-.title--two-mobile {
-  font-size: 36px;
-  line-height: 40px;
-  color: $title-color;
-  font-weight: 400;
-}
-
-.title--three-mobile {
-  font-size: 24px;
-  line-height: 37px;
-  color: #000000;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.title--one-mobile-black {
-  font-size: 36px;
-  line-height: 36px;
-  color: $title-color;
-  font-weight: 400;
 }
