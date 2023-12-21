@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/favicon-svg.svg" type="image/svg+xml">
-    <link rel="icon" href="favicons\favicon32x32.png" type="image/x-icon">
+    <link rel="icon" href="favicons/favicon32x32.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
@@ -19,7 +19,7 @@
           <picture>
             <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/main-header/logo-image-desktop.svg" width="70" height="59">
             <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/main-header/logo-image-tablet.svg" width="60" height="50">
-            <img class="main-header__image-logo" type="image/png" src="images/main-header/logo-image-mobile.svg" width="33" height="38" alt="Логотип cat energy.">
+            <img class="main-header__image-logo" src="images/main-header/logo-image-mobile.svg" width="33" height="38" alt="Логотип cat energy.">
           </picture>
         </a>
         <a class="main-header__link logo" href="index.html">
@@ -49,10 +49,11 @@
     <main class="main-container">
       <section class="main-container__section product-selection">
         <header class="product-selection__header">
-          <h1 class="product-selection__title title title">Подбор программы</h1>
+          <h1 class="product-selection__title title">Подбор программы</h1>
           <p class="product-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="product-selection__form product-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="product-form__fieldset">
+              <legend class="visually-hidden">Параметры питомца</legend>
               <label class="product-form__label">
                 <span class="product-form__label-text">ИМЯ:*</span>
                 <input class="product-form__control product-form__control--text" type="text" name="name" placeholder="барсик" required>
@@ -67,6 +68,7 @@
               </label>
             </fieldset>
             <fieldset class="product-form__fieldset">
+              <legend class="visually-hidden">Формат питания</legend>
               <label class="product-form__label">
                 <input class="product-form__radio" type="radio" name="product-type" value="slimming" checked>
                 <span class="product-form__label-text">похудение</span>
@@ -123,7 +125,7 @@
     <footer class="main-footer">
       <div class="main-footer__text-wrapper">
         <h2 class="main-footer__tittle">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="main-footer__address"> ул. Большая<br> Конюшенная, д. 19/8Санкт-Петербург </address>
+        <address class="main-footer__address">ул. Большая<br>Конюшенная, д. 19/8Санкт-Петербург</address>
       </div>
       <iframe class="main-footer__map" src="https://www.google.com/maps/d/u/0/embed?mid=1heTfqhr2ajSy8seUEqal3hY2y1jlXPQ&ehbc=2E312F&noprof=1" width="320" height="362"></iframe>
       <div class="main-footer__wrapper">
