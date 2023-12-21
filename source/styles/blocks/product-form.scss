@@ -1,0 +1,35 @@
+.product-form {
+
+}
+
+.product-form__label-text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-form__control {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-form__control--text {
+
+}
+
+.product-form__control--textarea {
+}
+
+.product-form__fieldset-title {
+  font-size: 24px;
+  line-height: 26px;
+  color: $title-color;
+}
+
+.product-form__text {
+  font-family: $secondary-font;
+  line-height: 16px;
+  color: #000000;
+}
