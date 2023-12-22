@@ -3,5 +3,15 @@
 }
 
 .logo__image-text {
+  &:hover {
+    opacity: 0.8;
+  }
 
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
 }
