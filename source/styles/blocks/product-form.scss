@@ -9,14 +9,7 @@
   margin-bottom: 14px;
 }
 
-.product-form__label-text {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  margin-right: 13px;
-}
-
-.product-form__label-text--image-email {
+.product-form__email-image {
   &::after {
     content: "";
     position: absolute;
@@ -24,11 +17,12 @@
     height: 20px;
     background-color: #000000;
     mask-image: url("../../images/icons/stack.svg#email-icon");
+    top: 16px;
     right: 12px;
   }
 }
 
-.product-form__label-text--image-phone {
+.product-form__phone-image {
   &::after {
     content: "";
     position: absolute;
@@ -37,7 +31,25 @@
     background-color: #000000;
     mask-image: url("../../images/icons/stack.svg#phone-icon");
     right: 13px;
+    top: 16px;
   }
+}
+
+.product-form__label--focus {
+  &:focus-within::after {
+    background-color: #68b738;
+  }
+
+  &:focus-within .product-form__control {
+    outline: 2px solid #444444;
+  }
+}
+
+.product-form__label-text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 13px;
 }
 
 .product-form__control {
@@ -48,9 +60,19 @@
   border-radius: 0;
   border: 1px solid #cdcdcd;
   flex-grow: 1;
-  height: 45px;
+  height: 52px;
+  box-sizing: border-box;
 }
 
+.product-form__label--error {
+  & .product-form__control {
+    outline: 2px solid #ff8282;
+  }
+
+  &::after {
+    background-color: #ff8282;
+  }
+}
 
 .product-form__control--text {
 

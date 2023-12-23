@@ -54,15 +54,15 @@
           <form class="product-selection__form product-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="product-form__fieldset">
               <legend class="visually-hidden">Параметры питомца</legend>
-              <label class="product-form__label">
+              <label class="product-form__label product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
                 <span class="product-form__label-text">ИМЯ:*</span>
                 <input class="product-form__control product-form__control--text" type="text" name="name" placeholder="барсик" required>
               </label>
-              <label class="product-form__label">
+              <label class="product-form__label product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
                 <span class="product-form__label-text">Вес (кг):*</span>
                 <input class="product-form__control product-form__control--text" type="number" name="weight" placeholder="7" required>
               </label>
-              <label class="product-form__label">
+              <label class="product-form__label product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
                 <span class="product-form__label-text">Возраст (лет):</span>
                 <input class="product-form__control product-form__control--text" type="number" name="age" placeholder="7">
               </label>
@@ -84,12 +84,12 @@
             </fieldset>
             <fieldset class="product-form__fieldset">
               <legend class="product-form__fieldset-title">Контактные данные (владельца кота)</legend>
-              <label class="product-form__label">
-                <span class="product-form__label-text product-form__label-text--image-email">E-mail:*</span>
+              <label class="product-form__label product-form__email-image product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
+                <span class="product-form__label-text">E-mail:*</span>
                 <input class="product-form__control product-form__control--text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
-              <label class="product-form__label">
-                <span class="product-form__label-text product-form__label-text--image-phone">Телефон:*</span>
+              <label class="product-form__label product-form__phone-image product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
+                <span class="product-form__label-text">Телефон:*</span>
                 <input class="product-form__control product-form__control--text" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
               </label>
             </fieldset>

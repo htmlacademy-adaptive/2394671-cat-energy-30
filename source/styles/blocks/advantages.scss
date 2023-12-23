@@ -21,6 +21,7 @@
 .advantages__text {
   font-family: $secondary-font;
   align-self: center;
+
   &::before {
     content: "";
     position: absolute;
@@ -41,24 +42,23 @@
   }
 }
 
-.advantages__text--powder{
+.advantages__text--powder {
   &::before {
     background-image: url("../../images/icons/advantages-item-powder.svg");
     background-size: 26px 29px;
   }
 }
 
-.advantages__text--food{
+.advantages__text--food {
   &::before {
     background-image: url("../../images/icons/advantages-item-food.svg");
     background-size: 25px 30px;
   }
 }
 
-.advantages__text--time{
+.advantages__text--time {
   &::before {
     background-image: url("../../images/icons/advantages-item-time.svg");
     background-size: 25px 31px;
   }
 }
-

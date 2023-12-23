@@ -7,6 +7,8 @@
 }
 
 .main-header__link {
+  text-decoration: none;
+
   &:focus-visible .main-header__image-logo {
     opacity: 0.8;
   }
@@ -17,7 +19,7 @@
     opacity: 0.8;
   }
 
-  &:active{
+  &:active {
     opacity: 0.6;
   }
 }

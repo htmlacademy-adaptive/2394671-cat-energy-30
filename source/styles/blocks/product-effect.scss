@@ -54,7 +54,8 @@
   z-index: 2;
   transform: translate(-50%, -50%);
   transition: 0.5s;
-  &::after{
+
+  &::after {
     content: "";
     position: absolute;
     width: 4px;
@@ -67,27 +68,32 @@
     z-index: -1;
     transition: 0.5s;
   }
+
   &:hover::after {
     background-color: #68b738;
   }
+
   &:hover {
     color: #68b738;
     cursor: pointer;
   }
+
   &:focus-visible {
     color: #68b738;
   }
+
   &:focus-visible::after {
     background-color: #68b738;
   }
+
   &:active::after {
     background-color: #5eaa2f;
   }
+
   &:active {
     color: #5eaa2f;
     opacity: 0.6;
   }
-
 }
 
 .product-effect__image-svg {
