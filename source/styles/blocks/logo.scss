@@ -1,13 +1,11 @@
 .logo {
-
+  &:focus-visible .logo__image-text {
+    opacity: 0.8;
+  }
 }
 
 .logo__image-text {
   &:hover {
-    opacity: 0.8;
-  }
-
-  &:focus-visible {
     opacity: 0.8;
   }
 

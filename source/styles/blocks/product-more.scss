@@ -1,5 +1,10 @@
 .product-more {
-
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-more__title {
@@ -8,6 +13,18 @@
   text-transform: uppercase;
   font-weight: 400;
   color: #111111;
+  padding-top: 53px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#product-more-plus");
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .product-more__subtitle {

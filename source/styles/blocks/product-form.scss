@@ -2,10 +2,42 @@
 
 }
 
+.product-form__label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
 .product-form__label-text {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 13px;
+}
+
+.product-form__label-text--image-email {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    mask-image: url("../../images/icons/stack.svg#email-icon");
+    right: 12px;
+  }
+}
+
+.product-form__label-text--image-phone {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    mask-image: url("../../images/icons/stack.svg#phone-icon");
+    right: 13px;
+  }
 }
 
 .product-form__control {
@@ -13,7 +45,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid #cdcdcd;
+  flex-grow: 1;
+  height: 45px;
 }
+
 
 .product-form__control--text {
 

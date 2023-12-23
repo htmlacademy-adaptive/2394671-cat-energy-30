@@ -87,6 +87,12 @@
     animation-fill-mode: forwards;
   }
 
+  &:focus-visible::after {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
   &:active {
     opacity: 0.3;
   }
