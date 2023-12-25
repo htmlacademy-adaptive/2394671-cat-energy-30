@@ -11,5 +11,54 @@
 }
 
 .advantages__item {
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 80px;
+  min-height: 60px;
+  display: flex;
+}
+
+.advantages__text {
   font-family: $secondary-font;
+  align-self: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__text--leaf {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-leaf.svg");
+    background-size: 30px 32px;
+  }
+}
+
+.advantages__text--powder {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-powder.svg");
+    background-size: 26px 29px;
+  }
+}
+
+.advantages__text--food {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-food.svg");
+    background-size: 25px 30px;
+  }
+}
+
+.advantages__text--time {
+  &::before {
+    background-image: url("../../images/icons/advantages-item-time.svg");
+    background-size: 25px 31px;
+  }
 }

@@ -3,6 +3,10 @@
 
 .academy-logo__link {
   text-decoration: none;
+
+  &:focus-visible .academy-logo__image {
+    color: #68b738;
+  }
 }
 
 .academy-logo__text {
@@ -10,8 +14,20 @@
   line-height: 20px;
   font-family: $secondary-font;
   color: #444444;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .academy-logo__image {
+  color: #666666;
 
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
