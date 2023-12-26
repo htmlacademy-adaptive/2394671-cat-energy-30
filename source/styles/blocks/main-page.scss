@@ -1,0 +1,18 @@
+.main-page__container {
+  width: 100%;
+}
+
+.main-page__container--preview {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.main-page__container--product-effect {
+  background-color: #eaeaea;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-page__container--preview {
+    background-color: #ffffff;
+  }
+}

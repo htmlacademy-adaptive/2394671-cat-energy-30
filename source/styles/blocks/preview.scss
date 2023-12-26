@@ -1,5 +1,7 @@
 .preview {
-  background-color: rgba(104, 183, 56, 0.85);
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .preview__title {
@@ -19,4 +21,34 @@
 
 .preview__link {
 
+}
+
+@media (min-width: $tablet-width) {
+  .preview {
+    width: 708px;
+    padding: 0 30px;
+    position: relative;
+  }
+
+  .preview__title {
+    color: $title-color;
+    margin-left: 90px;
+    margin-top: 65px;
+  }
+
+  .preview__subtitle {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 90px;
+    margin-bottom: 21px;
+  }
+
+  .preview__link {
+    width: 244px;
+    position: absolute;
+    z-index: 2;
+    top: 230px;
+    left: 120px;
+  }
 }

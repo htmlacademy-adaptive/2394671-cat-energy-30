@@ -1,9 +1,16 @@
 .main-footer {
-
+  background-color: #f2f2f2;
 }
 
-.main-footer__text-wrapper {
-  background-color: #f2f2f2;
+.main-footer__container-color {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main-footer__container {
+  width: 280px;
+  padding: 40px 20px;
+  margin: 0 auto;
 }
 
 .main-footer__tittle {
@@ -21,18 +28,29 @@
   font-family: $secondary-font;
 }
 
+.main-footer__container-map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .main-footer__map {
 
 }
 
-.main-footer__wrapper {
-  background-color: #f2f2f2;
-}
-
 .main-footer__logo {
-
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .main-footer__list {
+  padding: 20px 0;
+}
 
+.main-footer__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 34px;
 }

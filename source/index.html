@@ -46,10 +46,11 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="main-page">
+    <div class="main-page__container main-page__container--preview">
       <section class="preview">
-        <h1 class="preview__title title title--white">Функциональное питание<br> для котов</h1>
-        <p class="preview__subtitle">Занялся собой? Займись котом!</p>
+          <h1 class="preview__title title title--white">Функциональное питание<br> для котов</h1>
+          <p class="preview__subtitle">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width:1440px)" type="image/png" srcset="images/index-images/index-product-desktop@1x.png 1x, images/index-images/index-product-desktop@1x.png 2x" width="552" height="499">
           <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/index-product-tablet@1x.png 1x, images/index-images/index-product-tablet@2x.png 2x" width="709" height="609">
@@ -57,6 +58,7 @@
         </picture>
         <a class="preview__link button" href="form.html">подобрать программу</a>
       </section>
+    </div>
       <section class="catalogs">
         <h2 class="visually-hidden">Каталоги cat energy.</h2>
         <ul class="catalogs__list">
@@ -89,43 +91,51 @@
           </li>
         </ul>
       </section>
-      <section class="product-effect">
-        <h2 class="product-effect__title title">Живой пример</h2>
-        <p class="product-effect__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="product-effect__list">
-          <div class="product-effect__item">
-            <dt class="product-effect__quantity">5 КГ</dt>
-            <dd class="product-effect__description">снижение веса</dd>
+      <div class="main-page__container main-page__container--product-effect">
+        <section class="product-effect">
+          <h2 class="product-effect__title title">Живой пример</h2>
+          <p class="product-effect__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="product-effect__list">
+            <div class="product-effect__item">
+              <dt class="product-effect__quantity">5 КГ</dt>
+              <dd class="product-effect__description">снижение веса</dd>
+            </div>
+            <div class="product-effect__item">
+              <dt class="product-effect__quantity">60 ДНЕЙ</dt>
+              <dd class="product-effect__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="product-effect__value">Затраты на питание: 15 000 РУБ.</p>
+          <div class="product-effect__button-wrapper">
+            <button class="product-effect__button" type="button" >
+              <svg class="product-effect__image-svg" aria-hidden="true" focusable="false" width="40" height="40">
+                <use href="images/icons/stack.svg#product-effect-toggle-switch"></use>
+              </svg>
+              <span class="visually-hidden">Изменить фотографию до и после.</span>
+            </button>
+            <picture>
+              <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/fat-cat-tablet-desktop@1x.png 1x, images/index-images/fat-cat-tablet-desktop@2x.png 2x" width="560" height="512">
+              <img class="product-effect__image-before" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после принятие правильного питания">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/thin-cat-tablet-desktop@1x.png 1x, images/index-images/thin-cat-tablet-desktop@2x.png 2x" width="560" height="512">
+              <img class="product-effect__image-after" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до принятия правильного питания">
+            </picture>
           </div>
-          <div class="product-effect__item">
-            <dt class="product-effect__quantity">60 ДНЕЙ</dt>
-            <dd class="product-effect__description">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="product-effect__value">Затраты на питание: 15 000 РУБ.</p>
-        <div class="product-effect__button-wrapper">
-          <button class="product-effect__button" type="button" >
-            <svg class="product-effect__image-svg" aria-hidden="true" focusable="false" width="40" height="40">
-              <use href="images/icons/stack.svg#product-effect-toggle-switch"></use>
-            </svg>
-            <span class="visually-hidden">Изменить фотографию до и после.</span>
-          </button>
-          <picture>
-            <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/fat-cat-tablet-desktop@1x.png 1x, images/index-images/fat-cat-tablet-desktop@2x.png 2x" width="560" height="512">
-            <img class="product-effect__image-before" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после принятие правильного питания">
-          </picture>
-          <picture>
-            <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/thin-cat-tablet-desktop@1x.png 1x, images/index-images/thin-cat-tablet-desktop@2x.png 2x" width="560" height="512">
-            <img class="product-effect__image-after" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до принятия правильного питания">
-          </picture>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <h2 class="main-footer__tittle">приглашаем к сотрудничеству дилеров!</h2>
-      <address class="main-footer__address">ул. Большая<br>Конюшенная, д. 19/8Санкт-Петербург</address>
-      <iframe class="main-footer__map" src="https://www.google.com/maps/d/u/0/embed?mid=1heTfqhr2ajSy8seUEqal3hY2y1jlXPQ&ehbc=2E312F&noprof=1" width="320" height="362"></iframe>
-      <div class="main-footer__wrapper">
+      <div class="main-footer__container-color">
+        <div class="main-footer__container">
+          <h2 class="main-footer__tittle">приглашаем к сотрудничеству дилеров!</h2>
+          <address class="main-footer__address">ул. Большая<br>Конюшенная, д. 19/8Санкт-Петербург</address>
+        </div>
+      </div>
+      <div class="main-footer__container-map">
+        <iframe class="main-footer__map" src="https://www.google.com/maps/d/u/0/embed?mid=1heTfqhr2ajSy8seUEqal3hY2y1jlXPQ&ehbc=2E312F&noprof=1" width="320" height="362"></iframe>
+      </div>
+      <div class="main-footer__container">
         <a class="main-footer__logo logo" href="#">
           <img class="logo__image-text" src="images/logo-text.svg" width="128" height="24" alt="Cat energy.">
         </a>
