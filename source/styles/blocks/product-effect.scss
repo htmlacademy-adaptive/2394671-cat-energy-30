@@ -12,6 +12,11 @@
   font-family: $secondary-font;
 }
 
+.product-effect__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-effect__list {
 
 }
@@ -41,7 +46,8 @@
 
 .product-effect__button-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .product-effect__button {
@@ -110,6 +116,42 @@
   position: absolute;
   z-index: 1;
   overflow: hidden;
-  left: 0;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .product-effect {
+    width: 708px;
+    padding: 0 30px;
+    padding-top: 45px;
+    padding-bottom: 101px;
+  }
+
+  .product-effect__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+    line-height: 60px;
+  }
+
+  .product-effect__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .product-effect__container {
+    margin-bottom: 99px;
+  }
+
+  .product-effect__list {
+    display: flex;
+  }
+
+  .product-effect__value {
+    font-size: 20px;
+  }
+
 }
