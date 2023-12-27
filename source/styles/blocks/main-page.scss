@@ -3,7 +3,7 @@
 }
 
 .main-page__container--preview {
-  background-color: rgba(104, 183, 56, 0.85);
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, #ffffff 302px);
 }
 
 .main-page__container--product-effect {
@@ -13,6 +13,16 @@
 
 @media (min-width: $tablet-width) {
   .main-page__container--preview {
-    background-color: #ffffff;
+    background: #ffffff;
+  }
+
+  .main-page__container--product-effect {
+    background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__container--preview {
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
   }
 }

@@ -55,3 +55,12 @@
     margin-right: 13px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1220px;
+    padding: 0 110px;
+    padding-top: 55px;
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+  }
+}

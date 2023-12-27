@@ -153,5 +153,37 @@
   .product-effect__value {
     font-size: 20px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .product-effect {
+    width: 1220px;
+    padding: 0 110px;
+    padding-top: 0;
+    padding-bottom: 75px;
+    position: relative;
+  }
+
+  .product-effect__title {
+    margin-bottom: 146px;
+  }
+
+  .product-effect__text {
+    width: 433px;
+  }
+
+  .product-effect__container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .product-effect__list {
+    margin-bottom: 55px;
+  }
+
+  .product-effect__button-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

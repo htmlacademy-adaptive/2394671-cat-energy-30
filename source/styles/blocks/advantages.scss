@@ -71,7 +71,7 @@
     padding: 0 30px;
   }
 
-  .advantages__title  {
+  .advantages__title {
     margin-bottom: 32px;
     margin-top: 45px;
   }
@@ -90,11 +90,29 @@
     padding-left: 0;
     max-width: 249px;
     margin-bottom: 0;
+    box-sizing: border-box;
+    min-height: 280px;
   }
 
   .advantages__text {
     &::before {
       top: 40px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .advantages__title  {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .advantages__list {
+    margin-bottom: 69px;
   }
 }
