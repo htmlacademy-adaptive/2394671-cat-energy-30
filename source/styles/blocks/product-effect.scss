@@ -6,35 +6,68 @@
 
 .product-effect__title {
   line-height: 40px;
+  margin-bottom: 40px;
 }
 
 .product-effect__text {
   font-family: $secondary-font;
+  margin-bottom: 7px;
 }
 
 .product-effect__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .product-effect__list {
-
+  display: flex;
+  gap: 32px;
+  margin-bottom: 34px;
 }
 
 .product-effect__item {
-
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 .product-effect__quantity {
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  text-align: center;
+  max-width: 82px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.product-effect__item-container {
+  position: relative;
+  width: 100%;
 }
 
 .product-effect__description {
   font-size: 12px;
   line-height: 12px;
   font-family: $secondary-font;
+  text-align: center;
+  display: block;
+  width: 77px;
+  background-color: #eaeaea;
+  position: absolute;
+  padding: 0 6px;
+  padding-top: 1px;
+  right: 27%;
 }
 
 .product-effect__value {
@@ -42,6 +75,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+  max-width: 190px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .product-effect__button-wrapper {
@@ -148,6 +185,10 @@
 
   .product-effect__list {
     display: flex;
+  }
+
+  .product-effect__description {
+    background-color: #ffffff;
   }
 
   .product-effect__value {
