@@ -2,12 +2,63 @@
 
 }
 
+.product-form__fieldset-container {
+  width: 100%;
+}
+
+.product-form__fieldset-container--parameters {
+  padding: 39px 0 24px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.product-form__fieldset-container--feeding {
+  padding: 22px 0 19px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.product-form__fieldset-container--contacts {
+  padding: 26px 0 24px;
+}
+
+.product-form__fieldset-container--comment {
+  padding-bottom: 23px;
+}
+
+.product-form__fieldset-container--extra {
+  padding-bottom: 34px;
+}
+
+.product-form__fieldset {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.product-form__fieldset-title--contacts {
+  margin-bottom: 35px;
+}
+
+.product-form__fieldset-title--comment {
+  margin-bottom: 38px;
+}
+
+.product-form__fieldset-title--extra {
+  margin-bottom: 34px;
+}
+
 .product-form__label {
   display: flex;
   position: relative;
   align-items: center;
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
+
 
 .product-form__email-image {
   &::after {
@@ -79,6 +130,8 @@
 }
 
 .product-form__control--textarea {
+  width: 100%;
+  min-height: 150px;
 }
 
 .product-form__fieldset-title {
@@ -87,8 +140,82 @@
   color: $title-color;
 }
 
+.product-form__button-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .product-form__text {
   font-family: $secondary-font;
   line-height: 16px;
   color: #000000;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product-form__fieldset {
+    width: 768px;
+    padding: 0 70px;
+  }
+
+  .product-form__label-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product-form__label-container--feeding {
+    padding: 23px 27px 27px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .product-form__fieldset-container--parameters {
+    padding: 66px 0 72px;
+    border: none;
+  }
+
+  .product-form__fieldset-container--feeding {
+    padding: 0;
+    border: none;
+  }
+
+  .product-form__fieldset-container--contacts {
+    padding: 65px 0;
+  }
+
+  .product-form__fieldset-title--contacts {
+    margin-bottom: 76px;
+  }
+
+  .product-form__fieldset-container--extra {
+    padding-bottom: 52px;
+  }
+
+  .product-form__label-container--extra {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 32px;
+  }
+
+  .product-form__label--extra {
+    margin-bottom: 0;
+  }
+
+  .product-form__button-container {
+    width: 768px;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-form__button {
+    min-height: 54px;
+    min-width: 284px;
+    margin-right: 60px;
+  }
+
+  .product-form__text {
+    max-width: 175px;
+  }
 }
