@@ -1,9 +1,26 @@
 .product-card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-top: 1px solid #ebebeb;
+}
 
+
+.product-card__card-container{
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.product-card__info-container {
+  display: flex;
 }
 
 .product-card__link {
   text-decoration: none;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card__title {

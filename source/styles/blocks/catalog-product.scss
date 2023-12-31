@@ -1,7 +1,25 @@
 .catalog-product {
+  width: 100%
+}
 
+.catalog-product__title-header {
+  width: 280px;
+  padding: 27px 20px 41px;
+  margin: 0 auto;
+}
+
+.catalog-product__title {
+  margin: 0;
+}
+
+.catalog-product__item {
+  width: 100%;
 }
 
 .catalog-product__list {
   @include list-style-none;
+
+  &:last-child {
+    border-bottom: 1px solid #ebebeb;
+  }
 }
