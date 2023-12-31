@@ -29,3 +29,8 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-page__container--product-effect {
+    background: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+  }
+}

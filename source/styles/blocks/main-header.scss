@@ -44,6 +44,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__container {
+    border: none;
+  }
+
   .main-header {
     width: 708px;
     padding: 0 30px;
@@ -66,6 +70,10 @@
 
 @media (min-width: $desktop-width) {
   .main-header__container {
+    border: none;
+  }
+
+  .main-header__container--index {
     &::before {
       content: "";
       position: absolute;
