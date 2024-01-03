@@ -23,3 +23,24 @@
     border-bottom: 1px solid #ebebeb;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-product__title-header {
+    width: 708px;
+    padding: 0 30px;
+    margin-top: 65px;
+  }
+
+  .catalog-product__list {
+    width: 708px;
+    padding: 84px 30px 70px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
