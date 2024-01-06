@@ -1,24 +1,30 @@
 .catalogs {
-
+  width: 280px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .catalogs__list {
   @include list-style-none;
-  background-color: #f2f2f2;
 }
 
 .catalogs__item {
-  padding-top: 30px;
-  padding-bottom: 18px;
+  padding: 30px 33px 18px 20px;
   position: relative;
+  background-color: #f2f2f2;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
+
 
 .catalogs__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 90px;
+  margin-left: 70px;
   margin-bottom: 29px;
 
   &::before {
@@ -48,6 +54,9 @@
 
 .catalogs__text {
   font-family: $secondary-font;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .catalogs__link {
@@ -87,5 +96,112 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalogs {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .catalogs__item {
+    padding: 77px 316px 53px 52px;
+  }
+
+  .catalogs__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 0;
+    margin-bottom: 52px;
+    border: none;
+  }
+
+  .catalogs__link {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .catalogs__title--slim {
+    &::before {
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 211px;
+      }
+  }
+
+  .catalogs__title--pro {
+    &::before {
+      left: auto;
+      right: 29px;
+      width: 268px;
+      height: 200px;
+    }
+  }
+
+  .catalogs__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+
+    &::before {
+      top: 81px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalogs {
+    width: 1220px;
+    padding: 82px 110px 71px;
+  }
+
+  .catalogs__list {
+    display: flex;
+    gap: 80px;
+  }
+
+  .catalogs__item {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalogs__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 162px;
+    margin-bottom: 73px;
+    max-width: 457px;
+  }
+
+  .catalogs__title--slim {
+    &::before {
+      top: 41px;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+      }
+  }
+
+  .catalogs__title--pro {
+    &::before {
+      top: 47px;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+    }
+  }
+
+  .catalogs__text {
+    margin-bottom: 27px;
   }
 }

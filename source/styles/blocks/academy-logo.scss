@@ -31,3 +31,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .academy-logo__text {
+    margin-right: 23px;
+  }
+}

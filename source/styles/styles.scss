@@ -2,18 +2,20 @@
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/animations.scss";
 @import "./global/visually-hidden.scss";
 @import "./global/global.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
+@import "./blocks/page__body.scss";
 @import "./blocks/title.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/main-container.scss";
+@import "./blocks/main-page.scss";
 @import "./blocks/preview.scss";
-@import "./blocks/button.scss";
 @import "./blocks/catalogs.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/product-effect.scss";
@@ -26,3 +28,4 @@
 @import "./blocks/product-card.scss";
 @import "./blocks/product-more.scss";
 @import "./blocks/additional-product.scss";
+@import "./blocks/main-container.scss"
