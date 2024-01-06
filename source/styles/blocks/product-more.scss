@@ -76,3 +76,9 @@
     width: 250px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-more {
+    width: 245px;
+  }
+}

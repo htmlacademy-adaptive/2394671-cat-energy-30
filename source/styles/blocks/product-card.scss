@@ -137,3 +137,13 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+  }
+
+  .product-card__button {
+    width: 169px;
+  }
+}
