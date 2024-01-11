@@ -1,9 +1,38 @@
 .product-card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-top: 1px solid #ebebeb;
+}
 
+
+.product-card__card-container {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.product-card__info-container {
+  display: flex;
 }
 
 .product-card__link {
   text-decoration: none;
+  width: 140px;
+}
+
+.product-card__link--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__link--title {
+  max-width: 76px;
+  display: block;
+}
+
+.product-card__list-wrapper {
+  flex-grow: 1;
 }
 
 .product-card__title {
@@ -12,6 +41,18 @@
   text-transform: uppercase;
   color: #222222;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.product-card__list {
+  @include list-style-none;
+  margin-bottom: 21px;
+}
+
+.product-card__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-card__item-name {
@@ -24,8 +65,85 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
+  margin-left: 0;
 }
 
 .product-card__button {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    border: none;
+    box-sizing: border-box;
+    width: 324px;
+    padding: 10px 37px 40px 37px;
+    background: linear-gradient(to bottom, #ffffff 81px, #f2f2f2 81px, #f2f2f2 100%)
+  }
+
+  .product-card__card-container {
+    padding: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card__info-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product-card__link--image {
+    width: 200px;
+    min-height: 210px;
+    margin-bottom: 22px;
+    align-self: center;
+  }
+
+  .product-card__link--title {
+    max-width: 135px;
+    margin: 0 auto;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .product-card__list {
+    margin-bottom: 32px;
+  }
+
+  .product-card__item {
+    padding: 5px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product-card__item-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-card__item-value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-card__button {
+    width: 250px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+  }
+
+  .product-card__button {
+    width: 169px;
+  }
 }

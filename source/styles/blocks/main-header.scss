@@ -1,9 +1,21 @@
-.main-header {
+.main-header__container {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
 
+.main-header {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
 }
 
 .main-header__wrapper {
-
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-header__link {
@@ -15,6 +27,9 @@
 }
 
 .main-header__image-logo {
+  width: 33px;
+  height: 38px;
+
   &:hover {
     opacity: 0.8;
   }
@@ -26,4 +41,68 @@
 
 .main-header__toggle {
 
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__container {
+    border: none;
+  }
+
+  .main-header {
+    width: 708px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    margin-top: 25px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__image-logo {
+    width: 60px;
+    height: 50px;
+    margin-right: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__container {
+    border: none;
+  }
+
+  .main-header__container--index {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 50%;
+      height: 695px;
+      background:
+        linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        image-set(
+          url("../../images/main-header/header-cat@1x.jpg") type("image/jpg") 1x,
+          url("../../images/main-header/header-cat@2x.jpg") type("image/jpg") 2x
+        );
+      background-repeat: no-repeat;
+      background-color: #4e4d52;
+      background-position: right;
+    }
+  }
+
+  .main-header {
+    width: 1220px;
+    margin-top: 0;
+    padding: 0 110px;
+    padding-top: 55px;
+    min-height: 59px;
+  }
+
+  .main-header__image-logo {
+    width: 70px;
+    height: 59px;
+    margin-right: 14px;
+  }
 }
