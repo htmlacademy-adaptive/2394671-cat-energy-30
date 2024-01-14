@@ -160,11 +160,16 @@
     position: absolute;
     background-color: #ffffff;
     width: 565px;
+    padding: 60px 78px 60px 80px;
     min-height: 199px;
     box-sizing: border-box;
     top: 95px;
-    right: calc(50% - -340px);
+    right: calc(50% - -328px);
     transform: translate(50%);
+  }
+
+  .main-footer__address {
+    text-align: start;
   }
 
   .main-footer__container-map {
@@ -172,7 +177,7 @@
   }
 
   .main-footer__container--media {
-    padding-top: 66px;
+    padding-top: 54px;
     padding-bottom: 66px;
   }
 }

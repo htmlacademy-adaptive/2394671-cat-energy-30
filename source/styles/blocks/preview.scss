@@ -79,9 +79,7 @@
 @media (min-width: $desktop-width) {
   .preview {
     width: 1440px;
-    padding: 110px;
-    padding-left: 170px;
-    padding-bottom: 0;
+    padding: 104px 110px 0 190px;
     min-height: 580px;
   }
 
@@ -96,6 +94,6 @@
 
   .preview__product-image {
     left: 557px;
-    top: 27px;
+    top: 23px;
   }
 }

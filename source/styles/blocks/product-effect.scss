@@ -265,6 +265,7 @@
 
   .product-effect__text {
     width: 433px;
+    margin-bottom: 70px;
   }
 
   .product-effect__container {
@@ -275,13 +276,13 @@
   }
 
   .product-effect__list {
-    margin-bottom: 55px;
+    margin-bottom: 33px;
   }
 
   .product-effect__button-wrapper {
     position: absolute;
     top: 0;
-    right: 0;
+    right:112px;
   }
 
   .product-effect__description {
@@ -295,7 +296,8 @@
   .product-effect__value-text {
     min-width: 175px;
     max-width: 175px;
-    margin-right: 63px;
+    margin-right: 62px;
+    margin-left: 1px;
   }
 
   .product-effect__value {

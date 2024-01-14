@@ -79,9 +79,22 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     max-width: 600px;
+    margin-top: 0;
+    margin-right: 0;
+    gap: 34px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: normal;
+    padding-top: 4px;
   }
 
   .main-nav__link--index {
     color: #ffffff;
+  }
+
+  .main-nav__active-link {
+    border-bottom: 2px solid #ffffff;
   }
 }
