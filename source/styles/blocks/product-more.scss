@@ -14,7 +14,8 @@
   text-transform: uppercase;
   font-weight: 400;
   color: #111111;
-  padding-top: 53px;
+  padding-top: 39px;
+  margin-bottom: 9px;
 
   &::before {
     content: "";
@@ -32,6 +33,8 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .product-more__link {
@@ -49,8 +52,10 @@
   }
 
   .product-more__title {
-    padding-top: 110px;
-    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 109px;
+    margin-top: 0;
     margin-bottom: 23px;
     max-width: 134px;
     text-align: center;
@@ -59,7 +64,7 @@
       width: 60px;
       height: 60px;
       background-image: url("../../images/icons/stack.svg#product-more-plus-tablet");
-      top: 50px;
+      top: 48px;
     }
   }
 
@@ -68,12 +73,13 @@
     line-height: 18px;
     max-width: 170px;
     text-align: center;
-    margin: 0;
     flex-grow: 1;
   }
 
   .product-more__link {
     width: 250px;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
 }
 
