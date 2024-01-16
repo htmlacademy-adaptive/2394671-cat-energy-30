@@ -7,7 +7,7 @@
 }
 
 .product-form__fieldset-container--parameters {
-  padding: 39px 0 24px;
+  padding: 39px 0 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -59,6 +59,65 @@
   }
 }
 
+.product-form__radio {
+  appearance: none;
+}
+
+.product-form__radio:disabled ~ .product-form__label-text--feeding {
+  opacity: 0.3;
+}
+
+.product-form__radio:checked + .product-form__custom-radio::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #68b738;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-form__custom-radio {
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.product-form__checkbox {
+  appearance: none;
+}
+
+
+.product-form__checkbox:checked + .product-form__custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../images/icons/stack.svg#checkbox-mobile-tick");
+  transform: translate(-50%, -50%);
+}
+
+.product-form__checkbox:disabled ~ .product-form__label-text--extra,
+.product-form__checkbox:disabled ~ .product-form__custom-checkbox {
+  opacity: 0.3;
+}
+
+.product-form__custom-checkbox {
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
 
 .product-form__email-image {
   &::after {
@@ -103,6 +162,18 @@
   margin-right: 13px;
 }
 
+.product-form__label-text--feeding {
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.product-form__label-text--extra {
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .product-form__control {
   font-family: $primary-font;
   font-size: 16px;
@@ -111,7 +182,9 @@
   border-radius: 0;
   border: 1px solid #cdcdcd;
   flex-grow: 1;
-  height: 52px;
+  min-height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
 }
 
