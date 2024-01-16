@@ -146,6 +146,30 @@
 @media (min-width: $desktop-width) {
   .product-card {
     width: 245px;
+    padding-bottom: 41px;
+  }
+
+  .product-card__link--image {
+    margin-bottom: 10px;
+  }
+
+  .product-card__title {
+    margin-bottom: 23px;
+  }
+
+  .product-card__list {
+    margin-left: 2px;
+    margin-right: 1px;
+    margin-bottom: 33px;
+  }
+
+  .product-card__item {
+    padding-top: 5px;
+    padding-bottom: 7px;
+
+    &:first-of-type {
+      padding-top: 1px;
+    }
   }
 
   .product-card__button {

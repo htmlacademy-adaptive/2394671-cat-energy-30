@@ -43,3 +43,13 @@
     margin-right: 23px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .academy-logo__link {
+    padding-top: 8px;
+  }
+
+  .academy-logo__link--image {
+    padding-top: 0;
+  }
+}

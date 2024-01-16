@@ -193,6 +193,7 @@
 
   .catalogs__item {
     width: 570px;
+    box-sizing: border-box;
     padding: 77px 61px 60px 52px;
 
     &:not(:last-child) {
@@ -204,7 +205,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
     max-width: 457px;
   }
 
@@ -228,6 +229,7 @@
 
   .catalogs__text {
     margin-bottom: 27px;
+    max-width: 457px;
   }
 
   .catalogs__link {
