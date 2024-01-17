@@ -63,6 +63,15 @@
   appearance: none;
 }
 
+.product-form__radio:focus-visible ~ .product-form__label-text--feeding {
+  outline: 1px solid #000000;
+}
+
+.product-form__radio:disabled + .product-form__custom-radio,
+.product-form__radio:disabled + .product-form__custom-radio::after {
+  opacity: 0.3;
+}
+
 .product-form__radio:disabled ~ .product-form__label-text--feeding {
   opacity: 0.3;
 }
@@ -103,6 +112,11 @@
   height: 26px;
   background-image: url("../../images/icons/stack.svg#checkbox-mobile-tick");
   transform: translate(-50%, -50%);
+}
+
+.product-form__checkbox:focus-visible ~ .product-form__label-text--extra,
+.product-form__checkbox:focus-visible ~ .product-form__custom-checkbox {
+  outline: 1px solid #000000;
 }
 
 .product-form__checkbox:disabled ~ .product-form__label-text--extra,

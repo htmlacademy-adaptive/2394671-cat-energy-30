@@ -91,6 +91,10 @@
   .product-more__title {
     padding-top: 96px;
     margin-bottom: 26px;
+
+    &::before {
+      top: 46px;
+    }
   }
 
   .product-more__link {

@@ -146,7 +146,7 @@
 @media (min-width: $desktop-width) {
   .product-card {
     width: 245px;
-    padding-bottom: 41px;
+    padding-bottom: 39px;
   }
 
   .product-card__link--image {
@@ -168,7 +168,11 @@
     padding-bottom: 7px;
 
     &:first-of-type {
-      padding-top: 1px;
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      padding-bottom: 9px;
     }
   }
 
