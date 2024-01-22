@@ -113,6 +113,11 @@
   .catalogs__item {
     padding: 77px 316px 58px 52px;
 
+    &:first-child {
+      margin-top: 3px;
+      padding-bottom: 55px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -138,7 +143,7 @@
 
     &::after {
       top: 9px;
-      height: 12px;
+      height: 9px;
     }
   }
 
@@ -146,7 +151,7 @@
     padding-right: 59px;
 
     &::after {
-      top: 8px;
+      top: 11px;
     }
   }
 }
@@ -195,6 +200,10 @@
     width: 570px;
     box-sizing: border-box;
     padding: 77px 61px 60px 52px;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     &:not(:last-child) {
       margin-bottom: 0;
