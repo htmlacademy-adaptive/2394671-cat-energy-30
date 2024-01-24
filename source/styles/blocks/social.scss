@@ -1,8 +1,13 @@
 .social {
   @include list-style-none;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
+}
+
+.social--index {
+  padding-top: 22px;
 }
 
 .social__item {

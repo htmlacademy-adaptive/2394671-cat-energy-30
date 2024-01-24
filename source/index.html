@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Cat Energy: Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/favicon-svg.svg" type="image/svg+xml">
@@ -14,8 +14,8 @@
   </head>
   <body class="page__body">
     <div class="main-header__container main-header__container--index">
-      <header class="main-header">
-        <div class="main-header__wrapper">
+      <header class="main-header main-header--index">
+        <div class="main-header__wrapper ">
           <a class="main-header__link" href="index.html" aria-current="page">
             <picture>
               <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/main-header/logo-image-desktop.svg" width="70" height="59">
@@ -25,18 +25,19 @@
           </a>
           <a class="main-header__link logo" href="index.html" aria-current="page">
             <picture>
-              <source media="(min-width:1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
+              <source media="(min-width:1440px)" type="image/svg+xml" srcset="images/logo-text-tablet-desktop.svg" width="118" height="21">
+              <source media="(min-width:768px)" type="image/svg+xml" srcset="images/logo-text-tablet-desktop.svg" width="101" height="18">
               <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat energy.">
             </picture>
           </a>
-          <button class="main-header__toggle" type="button">
+          <button class="main-header__toggle main-header__toggle--close main-header__toggle--nojs" type="button"> <!-- Добавить класс main-header__toggle--open для открытого состояния, main-header__toggle--close для закрытого состояния меню -->
             <span class="visually-hidden">Открыть меню.</span>
           </button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--close main-nav--nojs"> <!--Для открытия меню добавить класс main-nav--open -->
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--index" href="#">главная</a>
+               <a class="main-nav__link main-nav__link--index main-nav__link--active-index ">главная</a> <!--Для состояния активной ссылки добавить класс main-nav__link--active-index-->
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--index" href="catalog.html">каталог продукции</a>
@@ -71,27 +72,29 @@
           </li>
           <li class="catalogs__item">
             <h3 class="catalogs__title catalogs__title--pro title">Набор массы</h3>
-            <p class="catalogs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="catalogs__link" href="catalog.html">каталог pro</a>
+            <p class="catalogs__text catalogs__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="catalogs__link catalogs__link--pro" href="catalog.html">каталог pro</a>
           </li>
         </ul>
       </section>
       <section class="advantages">
-        <h2 class="advantages__title title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <span class="advantages__text advantages__text--leaf">Функциональное питание содержит только полезные питательные вещества.</span>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__text advantages__text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__text advantages__text--food">Замените один-два приема обычной еды на наше функциональное питание.</span>
-          </li>
-          <li class="advantages__item">
-            <span class="advantages__text advantages__text--time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
-          </li>
-        </ul>
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <span class="advantages__text advantages__text--leaf">Функциональное питание содержит только полезные питательные вещества.</span>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__text advantages__text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__text advantages__text--food">Замените один-два приема обычной еды на наше функциональное питание.</span>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__text advantages__text--time">Уже через месяц наслаждайтесь изменениями к лучшему<br class="advantages__text-transposition"> вашего питомца!</span>
+            </li>
+          </ul>
+        </div>
       </section>
       <div class="main-page__container main-page__container--product-effect">
         <section class="product-effect">
@@ -124,14 +127,20 @@
               </svg>
               <span class="visually-hidden">Изменить фотографию до и после.</span>
             </button>
-            <picture>
-              <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/fat-cat-tablet-desktop@1x.png 1x, images/index-images/fat-cat-tablet-desktop@2x.png 2x" width="560" height="512">
-              <img class="product-effect__image-before" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после принятие правильного питания">
-            </picture>
-            <picture>
-              <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/thin-cat-tablet-desktop@1x.png 1x, images/index-images/thin-cat-tablet-desktop@2x.png 2x" width="560" height="512">
-              <img class="product-effect__image-after" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до принятия правильного питания">
-            </picture>
+            <div class="product-effect__image-container">
+              <div class="product-effect__image-wrapper">
+                <picture>
+                  <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/fat-cat-tablet-desktop@1x.png 1x, images/index-images/fat-cat-tablet-desktop@2x.png 2x" width="560" height="512">
+                  <img class="product-effect__image-before" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после принятие правильного питания">
+                </picture>
+              </div>
+              <div class="product-effect__image-wrapper">
+                <picture>
+                  <source media="(min-width: 768px)" type="image/png" srcset="images/index-images/thin-cat-tablet-desktop@1x.png 1x, images/index-images/thin-cat-tablet-desktop@2x.png 2x" width="560" height="512">
+                  <img class="product-effect__image-after" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до принятия правильного питания">
+                </picture>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -150,7 +159,7 @@
         <a class="main-footer__logo logo" href="#">
           <img class="logo__image-text" src="images/logo-text.svg" width="128" height="24" alt="Cat energy.">
         </a>
-        <ul class="main-footer__list social">
+        <ul class="main-footer__list social social--index">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте.</span>
@@ -180,7 +189,7 @@
           <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="academy-logo__text">HTML Academy</span>
           </a>
-          <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="academy-logo__link academy-logo__link--image" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="academy-logo__image"  aria-hidden="true" focusable="false" role="img" width="27" height="34">
               <use href="images/icons/stack.svg#html-academy-logo"></use>
             </svg>
@@ -189,5 +198,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

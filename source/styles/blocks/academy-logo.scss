@@ -1,12 +1,22 @@
 .academy-logo {
+
 }
 
 .academy-logo__link {
   text-decoration: none;
+  padding-top: 5px;
 
   &:focus-visible .academy-logo__image {
     color: #68b738;
   }
+}
+
+.academy-logo__link--text {
+  padding-top: 7px;
+}
+
+.academy-logo__link--image {
+  padding-top: 0;
 }
 
 .academy-logo__text {
@@ -35,5 +45,15 @@
 @media (min-width: $tablet-width) {
   .academy-logo__text {
     margin-right: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .academy-logo__link {
+    padding-top: 8px;
+  }
+
+  .academy-logo__link--image {
+    padding-top: 0;
   }
 }

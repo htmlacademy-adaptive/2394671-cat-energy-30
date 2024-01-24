@@ -1,6 +1,7 @@
 .additional-product {
   width: 100%;
-  padding: 25px 0 35px;
+  padding: 24px 0 35px;
+  position: relative;
 }
 
 .additional-product__container {
@@ -9,13 +10,31 @@
   margin: 0 auto;
 }
 
+.additional-product__title-wrapper {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
 .additional-product__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $title-color;
+  display: block;
+  background-color: #ffffff;
+  width: fit-content;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
+  margin-left: -20px;
+  padding: 0 20px;
 }
 
 .additional-product__list {
@@ -24,7 +43,7 @@
 }
 
 .additional-product__item {
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   border-bottom: 1px solid #cdcdcd;
 
   &:first-of-type {
@@ -35,6 +54,7 @@
 .additional-product__item-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3px;
 }
 
 .additional-product__item-title {
@@ -88,6 +108,8 @@
   max-width: 161px;
   text-align: center;
   margin: 0;
+  padding: 0 15px;
+  margin-right: 4px;
 
   &::after {
     content: "";
@@ -111,10 +133,19 @@
     padding: 0 30px;
   }
 
+  .additional-product__title-wrapper {
+    &::after {
+      top: 22px;
+      width: 100%;
+    }
+  }
+
   .additional-product__title {
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
     margin-bottom: 80px;
+    padding: 0 40px;
   }
 
   .additional-product__list {
@@ -128,20 +159,53 @@
     &:not(:first-child) {
       border-top: none;
     }
+
+    &:nth-of-type(2) .additional-product__item-quantity {
+      margin-right: 59px;
+      margin-bottom: 1px;
+    }
+
+    &:nth-of-type(2) .additional-product__item-wrapper {
+      margin-bottom: 11px;
+    }
   }
 
   .additional-product__item-container {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
+  }
+
+  .additional-product__item-title {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .additional-product__item-wrapper {
     min-width: 160px;
+    justify-content: flex-end;
+    flex-shrink: 0;
+  }
+
+  .additional-product__item-quantity {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 50px;
+    margin-top: 3px;
+  }
+
+  .additional-product__item-cost {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 2px;
+    margin-top: 1px;
   }
 
   .additional-product__link {
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-shrink: 0;
   }
 
   .additional-product__text-wrapper {
@@ -157,10 +221,13 @@
 
   .additional-product__text {
     text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
 
     &::after {
       top: 57px;
-      left: 77px;
+      left: 79px;
     }
   }
 }
@@ -173,6 +240,11 @@
   .additional-product__container {
     width: 1220px;
     padding: 0 110px;
+  }
+
+  .additional-product__title {
+    margin-left: -40px;
+    margin-bottom: 80px;
   }
 
   .additional-product__inner-container {
@@ -188,10 +260,18 @@
   .additional-product__item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px;
     border-left: none;
     border-right: none;
     align-items: center;
+
+    &:nth-of-type(2) .additional-product__item-wrapper {
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(2) .additional-product__item-cost {
+      margin-right: 10px;
+    }
   }
 
   .additional-product__item-container {
@@ -204,12 +284,23 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 0;
+    margin-top: 2px;
   }
 
   .additional-product__item-wrapper {
     width: 286px;
-    align-items: center;
     margin-bottom: 0;
+    margin-left: 2px;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+
+  .additional-product__item-quantity {
+    margin-top: 0;
+  }
+
+  .additional-product__item-cost {
+    margin-top: 0;
   }
 
   .additional-product__link {
@@ -233,5 +324,10 @@
 
   .additional-product__text {
     text-align: center;
+
+    &::after {
+      top: 58px;
+      left: 85px;
+    }
   }
 }

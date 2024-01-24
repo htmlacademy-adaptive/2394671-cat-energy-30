@@ -5,16 +5,19 @@
 }
 
 .advantages__title {
-
+  margin: 0;
+  margin-bottom: 42px;
+  margin-top: 2px;
 }
 
 .advantages__list {
   @include list-style-none;
+  margin-bottom: 49px;
 }
 
 .advantages__item {
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   padding-left: 80px;
   min-height: 60px;
   display: flex;
@@ -65,15 +68,26 @@
   }
 }
 
+.advantages__text-transposition {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__wrapper {
     width: 708px;
     padding: 0 30px;
+    margin: 0 auto;
   }
 
   .advantages__title {
     margin-bottom: 32px;
-    margin-top: 45px;
+    margin-top: 43px;
   }
 
   .advantages__list {
@@ -81,23 +95,51 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 37px;
-    margin-bottom: 47px;
+    padding-bottom: 47px;
+    margin-bottom: 0;
+    margin-right: 75px;
+    counter-reset: number-list;
   }
 
   .advantages__item {
     padding-top: 151px;
     padding-bottom: 57px;
     padding-left: 0;
-    max-width: 249px;
+    max-width: 250px;
     margin-bottom: 0;
     box-sizing: border-box;
     min-height: 280px;
+
+    &::before {
+      counter-increment: number-list;
+      content: counter(number-list);
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      top: 0;
+      right: 0;
+    }
+
+    &:first-of-type::before {
+      right: 24px;
+    }
   }
 
   .advantages__text {
+    font-size: 16px;
+    line-height: 24px;
+
     &::before {
       top: 40px;
+      height: 80px;
+      width: 80px;
     }
+  }
+
+  .advantages__text-transposition {
+    display: block;
   }
 }
 
@@ -105,6 +147,12 @@
   .advantages {
     width: 1220px;
     padding: 0 110px;
+    border-bottom: none;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+    padding: 0;
   }
 
   .advantages__title {
@@ -113,6 +161,18 @@
   }
 
   .advantages__list {
-    margin-bottom: 69px;
+    margin-right: 0;
+    gap: 78px;
+    justify-content: flex-start;
+    padding-bottom: 69px;
+  }
+
+  .advantages__item {
+    max-width: 246px;
+    padding-top: 148px;
+
+    &:nth-child(4) {
+      margin-left: 2px;
+    }
   }
 }

@@ -19,12 +19,13 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  max-width: 226px;
 }
 
 @media (min-width: $tablet-width) {
   .product-selection {
     padding-top: 67px;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
   }
 
   .product-selection__container {
@@ -34,17 +35,20 @@
 
   .product-selection__title {
     max-width: 435px;
+    margin-bottom: 55px;
   }
 
   .product-selection__text {
     max-width: 323px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-selection {
-    padding-top: 74px;
-    padding-bottom: 79px;
+    padding-top: 69px;
+    padding-bottom: 59px;
   }
 
   .product-selection__container {

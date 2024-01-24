@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Название проекта</title>
+    <title>Cat Energy: Подбор программы</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/favicon-svg.svg" type="image/svg+xml">
     <link rel="icon" href="favicons/favicon32x32.png" type="image/x-icon">
@@ -25,16 +25,17 @@
             </a>
             <a class="main-header__link logo" href="index.html" aria-current="page">
               <picture>
-                <source media="(min-width:1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
+                <source media="(min-width:1440px)" type="image/svg+xml" srcset="images/logo-text-tablet-desktop.svg" width="118" height="21">
+                <source media="(min-width:768px)" type="image/svg+xml" srcset="images/logo-text-tablet-desktop.svg" width="101" height="18">
                 <img class="logo__image-text" src="images/logo-text.svg" width="101" height="18" alt="Cat energy.">
               </picture>
             </a>
-            <button class="main-header__toggle" type="button">
+            <button class="main-header__toggle main-header__toggle--close main-header__toggle--nojs" type="button"> <!-- Добавить класс main-header__toggle--open для открытого состояния, main-header__toggle--close для закрытого состояния меню -->
               <span class="visually-hidden">Открыть меню.</span>
             </button>
           </div>
-          <nav class="main-nav">
-            <ul class="main-nav__list">
+          <nav class="main-nav main-nav--close main-nav--nojs"> <!--Для открытия меню добавить класс main-nav--open-->
+            <ul class="main-nav__list main-nav__list--form">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">главная</a>
               </li>
@@ -42,7 +43,7 @@
                 <a class="main-nav__link" href="catalog.html">каталог продукции</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#">подбор программы</a>
+                <a class="main-nav__link main-nav__active-link">подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -54,43 +55,47 @@
             <h1 class="product-selection__title title">Подбор программы</h1>
             <p class="product-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </div>
-          <div class="product-selection__form-wrapper">
             <form class="product-selection__form product-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="product-form__fieldset-container product-form__fieldset-container--parameters">
-                <fieldset class="product-form__fieldset">
-                  <legend class="visually-hidden">Параметры питомца</legend>
-                  <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
-                    <span class="product-form__label-text">ИМЯ:*</span>
-                    <input class="product-form__control product-form__control--text" type="text" name="name" placeholder="барсик" required>
-                  </label>
-                  <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
-                    <span class="product-form__label-text">Вес (кг):*</span>
-                    <input class="product-form__control product-form__control--text" type="number" name="weight" placeholder="7" required>
-                  </label>
-                  <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
-                    <span class="product-form__label-text">Возраст (лет):</span>
-                    <input class="product-form__control product-form__control--text" type="number" name="age" placeholder="7">
-                  </label>
-                </fieldset>
-              </div>
-              <div class="product-form__fieldset-container product-form__fieldset-container--feeding">
-                <fieldset class="product-form__fieldset product-form__fieldset--feeding">
-                  <legend class="visually-hidden">Формат питания</legend>
-                  <div class="product-form__label-container product-form__label-container--feeding">
-                    <label class="product-form__label product-form__label--feeding">
-                      <input class="product-form__radio" type="radio" name="product-type" value="slimming" checked>
-                      <span class="product-form__label-text">похудение</span>
+              <div class="product-form__fieldset-wrapper">
+                <div class="product-form__fieldset-container product-form__fieldset-container--parameters">
+                  <fieldset class="product-form__fieldset product-form__fieldset--parameters">
+                    <legend class="visually-hidden">Параметры питомца</legend>
+                    <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
+                      <span class="product-form__label-text">ИМЯ:*</span>
+                      <input class="product-form__control product-form__control--text" type="text" name="name" placeholder="барсик" required>
                     </label>
-                    <label class="product-form__label product-form__label--feeding">
-                      <input class="product-form__radio" type="radio" name="product-type" value="weight-gain">
-                      <span class="product-form__label-text">Набор массы</span>
+                    <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
+                      <span class="product-form__label-text">Вес (кг):*</span>
+                      <input class="product-form__control product-form__control--text" type="number" name="weight" placeholder="7" required>
                     </label>
-                    <label class="product-form__label product-form__label--feeding">
-                      <input class="product-form__radio" type="radio" name="product-type" value="don't-know">
-                      <span class="product-form__label-text">Не знаю (Нужен ваш совет)</span>
+                    <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
+                      <span class="product-form__label-text">Возраст (лет):</span>
+                      <input class="product-form__control product-form__control--text" type="number" name="age" placeholder="7">
                     </label>
-                  </div>
-                </fieldset>
+                  </fieldset>
+                </div>
+                <div class="product-form__fieldset-container product-form__fieldset-container--feeding">
+                  <fieldset class="product-form__fieldset product-form__fieldset--feeding">
+                    <legend class="visually-hidden">Формат питания</legend>
+                    <div class="product-form__label-container product-form__label-container--feeding">
+                      <label class="product-form__label product-form__label--feeding">
+                        <input class="product-form__radio visually-hidden" type="radio" name="product-type" value="slimming" checked>
+                        <span class="product-form__custom-radio"></span>
+                        <span class="product-form__label-text product-form__label-text--feeding">похудение</span>
+                      </label>
+                      <label class="product-form__label product-form__label--feeding">
+                        <input class="product-form__radio visually-hidden" type="radio" name="product-type" value="weight-gain">
+                        <span class="product-form__custom-radio"></span>
+                        <span class="product-form__label-text product-form__label-text--feeding">Набор массы</span>
+                      </label>
+                      <label class="product-form__label product-form__label--feeding">
+                        <input class="product-form__radio visually-hidden" type="radio" name="product-type" value="don't-know">
+                        <span class="product-form__custom-radio"></span>
+                        <span class="product-form__label-text product-form__label-text--feeding">Не знаю (Нужен ваш совет)</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
               </div>
               <div class="product-form__fieldset-container product-form__fieldset-container--contacts">
                 <fieldset class="product-form__fieldset product-form__fieldset--contacts">
@@ -106,29 +111,33 @@
                 </fieldset>
               </div>
               <div class="product-form__fieldset-container product-form__fieldset-container--comment">
-                <fieldset class="product-form__fieldset">
+                <fieldset class="product-form__fieldset product-form__fieldset--comment">
                   <legend class="product-form__fieldset-title product-form__fieldset-title--comment">Комментарий</legend>
                   <textarea class="product-form__control product-form__control--textarea" name="about-pet" placeholder="Расскажите обо всех повАдках кота"></textarea>
                 </fieldset>
               </div>
               <div class="product-form__fieldset-container product-form__fieldset-container--extra">
-                <fieldset class="product-form__fieldset">
+                <fieldset class="product-form__fieldset product-form__fieldset--extra">
                   <legend class="product-form__fieldset-title product-form__fieldset-title--extra">Дополнительно</legend>
                   <div class="product-form__label-container product-form__label-container--extra">
                     <label class="product-form__label product-form__label--extra">
-                      <input class="product-form__checkbox" type="checkbox" name="sugar-substitute" checked>
+                      <input class="product-form__checkbox visually-hidden" type="checkbox" name="sugar-substitute" checked>
+                      <span class="product-form__custom-checkbox"></span>
                       <span class="product-form__label-text product-form__label-text--extra">сахарозаменитель</span>
                     </label>
                     <label class="product-form__label product-form__label--extra">
-                      <input class="product-form__checkbox" type="checkbox" name="Water">
+                      <input class="product-form__checkbox visually-hidden" type="checkbox" name="Water">
+                      <span class="product-form__custom-checkbox"></span>
                       <span class="product-form__label-text product-form__label-text--extra">питьевая вода</span>
                     </label>
                     <label class="product-form__label product-form__label--extra">
-                      <input class="product-form__checkbox" type="checkbox" name="milk">
+                      <input class="product-form__checkbox visually-hidden" type="checkbox" name="milk">
+                      <span class="product-form__custom-checkbox"></span>
                       <span class="product-form__label-text product-form__label-text--extra">молоко</span>
                     </label>
                     <label class="product-form__label product-form__label--extra">
-                      <input class="product-form__checkbox" type="checkbox" name="vitamins">
+                      <input class="product-form__checkbox visually-hidden" type="checkbox" name="vitamins">
+                      <span class="product-form__custom-checkbox"></span>
                       <span class="product-form__label-text product-form__label-text--extra">витамины</span>
                     </label>
                   </div>
@@ -141,7 +150,6 @@
                 </div>
               </div>
             </form>
-          </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -185,11 +193,11 @@
           </li>
         </ul>
         <div class="main-footer__logo-wrapper academy-logo">
-          <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="academy-logo__link academy-logo__link--text" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="academy-logo__text">HTML Academy</span>
           </a>
-          <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="academy-logo__image"  aria-hidden="true" focusable="false" role="img" width="27" height="34">
+          <a class="academy-logo__link academy-logo__link--image" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="academy-logo__image " aria-hidden="true" focusable="false" role="img" width="27" height="34">
               <use href="images/icons/stack.svg#html-academy-logo"></use>
             </svg>
             <span class="visually-hidden">Логотип HTML Academy</span>
