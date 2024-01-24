@@ -184,6 +184,7 @@
   .additional-product__item-wrapper {
     min-width: 160px;
     justify-content: flex-end;
+    flex-shrink: 0;
   }
 
   .additional-product__item-quantity {
@@ -204,6 +205,7 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    flex-shrink: 0;
   }
 
   .additional-product__text-wrapper {

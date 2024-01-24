@@ -98,6 +98,12 @@
   appearance: none;
 }
 
+.product-form__radio:hover + .product-form__custom-radio,
+.product-form__radio:focus-visible + .product-form__custom-radio {
+  border: solid 1px #bababa;
+}
+
+
 .product-form__radio:focus-visible ~ .product-form__label-text--feeding {
   outline: 1px solid #000000;
 }
@@ -149,8 +155,12 @@
   transform: translate(-50%, -50%);
 }
 
-.product-form__checkbox:focus-visible ~ .product-form__label-text--extra,
-.product-form__checkbox:focus-visible ~ .product-form__custom-checkbox {
+.product-form__checkbox:hover + .product-form__custom-checkbox,
+.product-form__checkbox:focus-visible + .product-form__custom-checkbox {
+  border: solid 1px #bababa;
+}
+
+.product-form__checkbox:focus-visible ~ .product-form__label-text--extra {
   outline: 1px solid #000000;
 }
 
@@ -167,7 +177,6 @@
   border: 1px solid #cdcdcd;
 }
 
-
 .product-form__email-image {
   &::after {
     content: "";
@@ -176,8 +185,9 @@
     height: 20px;
     background-color: #000000;
     mask-image: url("../../images/icons/stack.svg#email-icon");
-    top: 13px;
     right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -190,8 +200,14 @@
     background-color: #000000;
     mask-image: url("../../images/icons/stack.svg#phone-icon");
     right: 13px;
-    top: 13px;
+    top: 50%;
+    transform: translateY(-50%);
   }
+}
+
+.product-form__phone-image .product-form__control--text,
+.product-form__email-image .product-form__control--text {
+  padding-right: 40px;
 }
 
 .product-form__label--focus {
@@ -209,12 +225,14 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 13px;
+  max-width: 200px;
 }
 
 .product-form__label-text--feeding {
   padding-left: 45px;
   padding-top: 6px;
   padding-bottom: 6px;
+  max-width: fit-content;
 }
 
 .product-form__label-text--extra {
@@ -229,11 +247,15 @@
   line-height: 18px;
   text-transform: uppercase;
   border-radius: 0;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   flex-grow: 1;
   min-height: 45px;
   padding: 11px 15px;
   box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .product-form__label--error {
@@ -247,7 +269,6 @@
 }
 
 .product-form__control--text {
-
 }
 
 .product-form__control--textarea {
@@ -371,14 +392,12 @@
 
   .product-form__email-image {
     &::after {
-      top: 16px;
       right: 14px;
     }
   }
 
   .product-form__phone-image {
     &::after {
-      top: 16px;
       right: 14px;
     }
   }

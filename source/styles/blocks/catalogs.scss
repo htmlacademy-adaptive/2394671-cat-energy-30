@@ -114,7 +114,6 @@
     padding: 77px 316px 58px 52px;
 
     &:first-child {
-      margin-top: 3px;
       padding-bottom: 55px;
     }
 
@@ -142,7 +141,7 @@
     padding-right: 57px;
 
     &::after {
-      top: 9px;
+      bottom: 12px;
       height: 9px;
     }
   }
@@ -151,7 +150,7 @@
     padding-right: 59px;
 
     &::after {
-      top: 11px;
+      bottom: 11px;
     }
   }
 }
@@ -193,6 +192,7 @@
 
   .catalogs__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 
@@ -243,13 +243,13 @@
 
   .catalogs__link {
     &::after {
-      top: 10px;
+      bottom: 10px;
     }
   }
 
   .catalogs__link--pro {
     &::after {
-      top: 10px;
+      bottom: 10px;
     }
   }
 }
