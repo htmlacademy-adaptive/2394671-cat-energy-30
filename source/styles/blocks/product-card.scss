@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 17px;
+  min-width: 100px;
 }
 
 
@@ -55,6 +56,7 @@
 .product-card__item {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .product-card__item-name {

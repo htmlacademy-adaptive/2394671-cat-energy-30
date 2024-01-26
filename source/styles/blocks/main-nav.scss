@@ -49,6 +49,11 @@
       border-bottom: 1px solid #e6e6e6;
     }
   }
+
+  .main-nav__link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
