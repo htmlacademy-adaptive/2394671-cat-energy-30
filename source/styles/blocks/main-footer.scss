@@ -24,7 +24,6 @@
 
 .main-footer__container--title {
   display: flex;
-  gap: 15px;
   flex-wrap: nowrap;
 }
 
@@ -108,6 +107,7 @@
   .main-footer__container--title {
     width: 628px;
     padding: 60px 70px;
+    gap: 15px;
     flex-wrap: nowrap;
   }
 
