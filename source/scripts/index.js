@@ -4,7 +4,7 @@ const headerToggle = document.querySelector('.main-header__toggle');
 navMain.classList.remove('main-nav--nojs');
 headerToggle.classList.remove('main-header__toggle--nojs');
 
-headerToggle.addEventListener('click', function () {
+headerToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--close')) {
     navMain.classList.remove('main-nav--close');
     navMain.classList.add('main-nav--open');
