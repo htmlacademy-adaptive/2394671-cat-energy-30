@@ -130,6 +130,7 @@
   .advantages__text {
     font-size: 16px;
     line-height: 24px;
+    min-width: 250px;
 
     &::before {
       top: 40px;
@@ -174,5 +175,9 @@
     &:nth-child(4) {
       margin-left: 2px;
     }
+  }
+
+  .advantages__text {
+    min-width: 246px;
   }
 }

@@ -156,10 +156,6 @@
   }
 }
 
-.product-effect__image-svg {
-
-}
-
 .product-effect__image-container {
   display: grid;
   grid-template-columns: 138px 138px;
@@ -177,7 +173,6 @@
 .product-effect__image-after {
   display: block;
   transform: translate(-50%);
-
 }
 
 @media (min-width: $tablet-width) {

@@ -10,10 +10,6 @@
   align-items: center;
 }
 
-.main-nav__item {
-
-}
-
 .main-nav__link {
   font-size: 20px;
   line-height: 20px;
@@ -102,17 +98,61 @@
     font-size: 20px;
     line-height: normal;
     padding-top: 4px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__link--index {
     color: #ffffff;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__active-link {
     border-bottom: 2px solid #68b738;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   .main-nav__link--active-index {
     border-bottom: 2px solid #ffffff;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      opacity: 1;
+    }
   }
 }
