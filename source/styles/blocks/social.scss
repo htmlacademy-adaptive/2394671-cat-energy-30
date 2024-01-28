@@ -4,14 +4,11 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .social--index {
-  padding-top: 22px;
-}
-
-.social__item {
-
+  padding-top: 19px;
 }
 
 .social__link {

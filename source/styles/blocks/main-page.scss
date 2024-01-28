@@ -6,8 +6,10 @@
   background-image:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, #ffffff 63%, #ffffff 100%),
     image-set(
-      url("../../images/main-header/header-mobile-cat@1x.jpg") 1x,
-      url("../../images/main-header/header-mobile-cat@2x.jpg") 2x
+      url("../../images/main-header/header-mobile-cat@1x.webp") type("image/webp") 1x,
+      url("../../images/main-header/header-mobile-cat@2x.webp") type("image/webp") 2x,
+      url("../../images/main-header/header-mobile-cat@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/main-header/header-mobile-cat@2x.jpg") type("image/jpeg") 2x
     ),
     linear-gradient(to bottom, #4e4d52 63%, #ffffff 63%, #ffffff 100%);
   background-repeat: no-repeat;

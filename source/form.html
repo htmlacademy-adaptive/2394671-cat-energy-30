@@ -10,6 +10,8 @@
     <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
     <body class="page__body">
@@ -62,15 +64,15 @@
                     <legend class="visually-hidden">Параметры питомца</legend>
                     <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
                       <span class="product-form__label-text">ИМЯ:*</span>
-                      <input class="product-form__control product-form__control--text" type="text" name="name" placeholder="барсик" required>
+                      <input class="product-form__control product-form__control--text" type="text" name="name" placeholder="барсик" required aria-label="укажите имя питомца.">
                     </label>
                     <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
-                      <span class="product-form__label-text">Вес (кг):*</span>
-                      <input class="product-form__control product-form__control--text" type="number" name="weight" placeholder="7" required>
+                      <span class="product-form__label-text">Вес&nbsp;(кг):*</span>
+                      <input class="product-form__control product-form__control--text" type="number" name="weight" placeholder="7" required aria-label="укажите вес питомца.">
                     </label>
                     <label class="product-form__label product-form__label--parameters product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
-                      <span class="product-form__label-text">Возраст (лет):</span>
-                      <input class="product-form__control product-form__control--text" type="number" name="age" placeholder="7">
+                      <span class="product-form__label-text">Возраст&nbsp;(лет):</span>
+                      <input class="product-form__control product-form__control--text" type="number" name="age" placeholder="7" aria-label="укажите возраст питомца.">
                     </label>
                   </fieldset>
                 </div>
@@ -102,18 +104,18 @@
                   <legend class="product-form__fieldset-title product-form__fieldset-title--contacts">Контактные данные (владельца кота)</legend>
                   <label class="product-form__label product-form__label--contacts product-form__email-image product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
                     <span class="product-form__label-text">E-mail:*</span>
-                    <input class="product-form__control product-form__control--text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <input class="product-form__control product-form__control--text" type="email" name="email" placeholder="kuklachev@gmail.com" required aria-label="Укажите E-mail.">
                   </label>
                   <label class="product-form__label product-form__label--contacts product-form__phone-image product-form__label--focus"><!--Добавить class="product-form__label--error" для input error -->
                     <span class="product-form__label-text">Телефон:*</span>
-                    <input class="product-form__control product-form__control--text" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                    <input class="product-form__control product-form__control--text" type="tel" name="tel" placeholder="8 (960) 900-60-90" required aria-label="Укажите телефон.">
                   </label>
                 </fieldset>
               </div>
               <div class="product-form__fieldset-container product-form__fieldset-container--comment">
                 <fieldset class="product-form__fieldset product-form__fieldset--comment">
                   <legend class="product-form__fieldset-title product-form__fieldset-title--comment">Комментарий</legend>
-                  <textarea class="product-form__control product-form__control--textarea" name="about-pet" placeholder="Расскажите обо всех повАдках кота"></textarea>
+                  <textarea class="product-form__control product-form__control--textarea" name="about-pet" placeholder="Расскажите обо всех повАдках кота" aria-label="Напишите ваш комментарий."></textarea>
                 </fieldset>
               </div>
               <div class="product-form__fieldset-container product-form__fieldset-container--extra">
