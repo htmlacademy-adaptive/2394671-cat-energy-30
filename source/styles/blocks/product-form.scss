@@ -249,9 +249,8 @@
   height: 45px;
   padding: 11px 15px;
   box-sizing: border-box;
-  appearance: none;
+  appearance: textfield;
   width: 100%;
-  -moz-appearance: textfield;
 
   &:hover {
     border: 1px solid #cdcdcd;
