@@ -1,23 +1,21 @@
-.academy-logo {
-  &:hover .academy-logo__image {
-    color: #68b738;
-  }
-
-  &:focus-within .academy-logo__image {
-    color: #68b738;
-  }
-
-  &:active .academy-logo__text,
-  &:active .academy-logo__image {
-    opacity: 0.3;
-  }
-}
-
 .academy-logo__link {
   text-decoration: none;
   padding-top: 5px;
 
+  &:hover .academy-logo__image {
+    color: #68b738;
+  }
+
+  &:focus-visible .academy-logo__image {
+    color: #68b738;
+  }
+
   &:active .academy-logo__image {
+    opacity: 0.3;
+    color: #68b738;
+  }
+
+  &:active .academy-logo__text {
     opacity: 0.3;
   }
 }
@@ -42,6 +40,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .academy-logo {
+    &:hover .academy-logo__image {
+      color: #68b738;
+    }
+
+    &:focus-within .academy-logo__image {
+      color: #68b738;
+    }
+
+    &:active .academy-logo__text {
+      opacity: 0.3;
+    }
+
+    &:active .academy-logo__image {
+      opacity: 0.3;
+      color: #68b738;
+    }
+  }
+
   .academy-logo__text {
     margin-right: 23px;
   }
